@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrainsMono", monospace;
+}
+
+body {
+    background-color: #111318;
+    min-height: 100vh;
+}
+
+.Titulo {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Titulo h1{
+    color: rgb(241, 241, 241);
+}
+
+.tela-toda {
+    width: 95%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sessaoCima {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sessaoCima .input{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1B1E25;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #252830;
+}
+
+.sessaoCima .input input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #2a2e39;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    background-color: #111318;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.sessaoCima .input input:focus {
+    border-color: #1474ce;
+}
+
+.input label{
+    color: rgb(190, 189, 189);
+    font-size: 14px;
+}
+
+.tela-despesas{
+    width: 100%;
+    gap: 20px;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: stretch;
+}
+
+.sessaoDespesa{
+    width: 100%;
+    height: 100%;
+    background-color: #1B1E25;
+    border-radius: 8px;
+    border: 2px solid #252830;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sessaoDespesa .inputs{
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sessaoDespesa .titulo h1{
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+.sessaoDespesa .inputs .inputDespesa{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+}
+
+.sessaoDespesa .inputs .inputDespesa input{
+    width: 120px;
+    padding: 8px;
+    background-color: #111318;
+    border: 1px solid #2a2e39;
+    border-radius: 6px;
+    color: #ffffff;
+    outline: none;
+    font-size: 13px;
+    text-align: left;
+}
+
+.sessaoDespesa .inputs .inputDespesa input:focus {
+    border-color: #1474ce;
+}
+
+.sessaoDespesa .inputs .inputDespesa label{
+   font-size: 13px;
+   color: #9da3af;
+}
+.tela-status{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.containerSobrou{
+    min-width: 200px;
+    width: 30%;
+    max-width: 400px;
+    height: 200px;
+    background-color: #0d8809;
+    border: 1px solid #d3d1d1;
+    border-radius: 5px;
+    padding: 20px;
+    color: #f0eeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.containerSobrou h3{
+    font-size: 30px;
+}
+.containerSobrou p{
+    font-size: 14px;
+}

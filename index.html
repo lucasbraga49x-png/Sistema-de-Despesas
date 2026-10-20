@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Organizando despesas</title>
+</head>
+
+<body>
+    <div class="Titulo">
+        <h1>Calculadora de despesas</h1>
+    </div>
+    <div class="tela-toda">
+        <div class="sessaoCima">
+            <div class="input">
+                <label for="salario">Salário</label>
+                <input type="text" placeholder="R$00.00" id="salario">
+            </div>
+            <div class="input">
+                <label for="dinheiroExtra">Dinheiro extra</label>
+                <input type="text" placeholder="R$00.00" id="dinheiroExtra">
+            </div>
+            <div class="input">
+                <label for="dinheiroTotal">Dinheiro total</label>
+                <input type="text" id="dinheiroTotal" placeholder="R$00.00" readonly>
+            </div>
+        </div>
+
+        <div class="tela-despesas">
+            
+            <div class="sessaoDespesa">
+                <div class="titulo">
+                    <h1>Moradia</h1>
+                </div>
+                <div class="inputs">
+                    <div class="inputDespesa">
+                        <label for="aluguel">Aluguel</label>
+                        <input type="text" placeholder="R$00.00" id="aluguel">
+                    </div>
+                    <div class="inputDespesa">
+                        <label for="condominio">Condomínio</label>
+                        <input type="text" placeholder="R$00.00" id="condominio">
+                    </div>
+                    <div class="inputDespesa">
+                        <label for="agua">Água</label>
+                        <input type="text" placeholder="R$00.00" id="agua">
+                    </div>
+                    <div class="inputDespesa">
+                        <label for="luz">Luz</label>
+                        <input type="text" placeholder="R$00.00" id="luz">
+                    </div>
+                    <div class="inputDespesa">
+                        <label for="internet">Internet</label>
+                        <input type="text" placeholder="R$00.00" id="internet">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sessaoDespesa">
+                <div class="titulo">
+                    <h1>Transporte</h1>
+                </div>
+                <div class="inputs">
+                    <div class="inputDespesa">
+                        <label for="combustivel">Combustível</label>
+                        <input type="text" placeholder="R$00.00" id="combustivel">
+                    </div>
+                    <div class="inputDespesa">
+                        <label for="transportePublico">Transporte Público</label>
+                        <input type="text" placeholder="R$00.00" id="transportePublico">
+                    </div>
+                    <div class="inputDespesa">
+                        <label for="manutencao">Manutenção / Uber</label>
+                        <input type="text" placeholder="R$00.00" id="manutencao">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sessaoDespesa">
+                <div class="titulo">
+                    <h1>Alimentação</h1>
+                </div>
+                <div class="inputs">
+                    <div class="inputDespesa">
+                        <label for="supermercado">Supermercado</label>
+                        <input type="text" placeholder="R$00.00" id="supermercado">
+                    </div>
+                    <div class="inputDespesa">
+                        <label for="restaurantes">Restaurantes / Delivery</label>
+                        <input type="text" placeholder="R$00.00" id="restaurantes">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sessaoDespesa">
+                <div class="titulo">
+                    <h1>Lazer e Assinaturas</h1>
+                </div>
+                <div class="inputs">
+                    <div class="inputDespesa">
+                        <label for="streaming">Streaming</label>
+                        <input type="text" placeholder="R$00.00" id="streaming">
+                    </div>
+                    <div class="inputDespesa">
+                        <label for="passeios">Passeios e Lazer</label>
+                        <input type="text" placeholder="R$00.00" id="passeios">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tela-status">
+            <div class="containerSobrou">
+                <h3 id="dinheiroRestado">0</h3>
+                <p id="status">Muito bom! Talvez seja uma boa ideia começar a investir</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
